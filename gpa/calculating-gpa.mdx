@@ -1,0 +1,88 @@
+---
+title: "How ClassTrack Calculates Your Semester and Cumulative GPA"
+sidebarTitle: "Calculating GPA"
+description: "Understand the grade point formulas ClassTrack uses, how credit hours are weighted, and how to choose the right grading scale for your school."
+---
+
+ClassTrack handles all GPA math automatically, but understanding the formula behind the numbers helps you make smarter decisions about your coursework. Once you know how credit hours and grade points interact, you'll have a much clearer sense of which classes carry the most weight — and where to focus your effort to move the needle on your GPA.
+
+## The GPA formula
+
+ClassTrack uses the standard weighted GPA formula:
+
+**GPA = Sum of (Grade Points × Credit Hours) / Total Credit Hours**
+
+Here's a concrete example showing how three classes combine into a single semester GPA:
+
+| Class | Credit Hours | Grade | Grade Points | Weighted Points |
+|---|---|---|---|---|
+| Calculus II | 4 | A | 4.0 | 16.0 |
+| History 101 | 3 | B+ | 3.3 | 9.9 |
+| English Comp | 3 | A- | 3.7 | 11.1 |
+| **Total** | **10** | | | **37.0** |
+
+**GPA = 37.0 / 10 = 3.70**
+
+Notice that Calculus II has the largest influence on the result because it carries four credit hours — twice the weight of a two-credit elective. ClassTrack applies this same logic across every class in your semester automatically.
+
+## Grading scales
+
+ClassTrack supports two grading scales. Choose the one your school uses in **Settings → GPA → Grading Scale**.
+
+<Tabs>
+  <Tab title="Standard 4.0">
+    The standard scale maps each letter grade to a whole-number grade point value. Plus and minus modifiers are not distinguished.
+
+    | Letter Grade | Grade Points |
+    |---|---|
+    | A | 4.0 |
+    | B | 3.0 |
+    | C | 2.0 |
+    | D | 1.0 |
+    | F | 0.0 |
+  </Tab>
+  <Tab title="Plus / Minus">
+    The plus/minus scale adds finer granularity by assigning distinct values to modified grades.
+
+    | Letter Grade | Grade Points |
+    |---|---|
+    | A  | 4.0 |
+    | A- | 3.7 |
+    | B+ | 3.3 |
+    | B  | 3.0 |
+    | B- | 2.7 |
+    | C+ | 2.3 |
+    | C  | 2.0 |
+    | C- | 1.7 |
+    | D+ | 1.3 |
+    | D  | 1.0 |
+    | D- | 0.7 |
+    | F  | 0.0 |
+  </Tab>
+</Tabs>
+
+## Percentage-to-letter grade conversion
+
+When you enter a percentage score for an assignment or exam, ClassTrack converts it to a letter grade using the following default cutoffs:
+
+| Percentage Range | Letter Grade |
+|---|---|
+| 90 – 100% | A |
+| 80 – 89%  | B |
+| 70 – 79%  | C |
+| 60 – 69%  | D |
+| Below 60% | F |
+
+If your school uses different cutoffs — for example, an A starting at 93% — you can customize every threshold. Open the class you want to adjust, tap **Settings**, and edit the percentage boundaries under **Grade Cutoffs**. Changes apply only to that class, so each course can reflect its own grading policy.
+
+## Cumulative GPA
+
+Your cumulative GPA represents your academic record across every semester you've entered in ClassTrack. To calculate it, ClassTrack pools all credit hours and weighted grade points from every recorded semester and applies the same formula:
+
+**Cumulative GPA = Total Weighted Points (all semesters) / Total Credit Hours (all semesters)**
+
+This means a semester with many high-credit courses has a proportionally larger effect on your cumulative GPA than a lighter semester. ClassTrack recalculates your cumulative GPA automatically whenever you add a new semester, update a grade, or adjust credit hours for any class.
+
+<Tip>
+  Use the **What-if Calculator** (GPA Tracker → "What-if") to preview how a hypothetical grade in any class would change your semester or cumulative GPA before you actually receive it. It's a great way to set realistic targets heading into finals.
+</Tip>
